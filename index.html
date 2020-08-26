@@ -29,11 +29,12 @@
   <link rel="stylesheet" type="text/css" href="./kr/css/webfonts.css" />
   <link rel="stylesheet" type="text/css" href="./kr/css/default.css" />
   <link rel="stylesheet" type="text/css" href="./kr/css/layout.css" />
+  <link rel="stylesheet" href="./kr/css/progressbar.css" />
   <!-- <link rel="stylesheet" type="text/css" href="./kr/css/cmpt.css" /> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" />
   <link rel="stylesheet" href="http://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css" />
   <link rel="stylesheet" href="./font/font.css" />
-  <link rel="stylesheet" href="./kr/css/progressbar.css" />
+
   <!-- 메인 CSS -->
 
   <!-- 반응형 CSS -->
@@ -42,6 +43,7 @@
   <!-- 공통 JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
+  <script src="./kr/js/progressbar.js"></script>
   <!-- <script src="./jquery/js/jquery-2.1.4.min.js"></script> -->
   <script src="./jquery/js/jquery-ui.custom.js"></script>
   <script src="./jquery/js/jquery.easing.1.3.js"></script>
@@ -58,8 +60,9 @@
   <!-- 메인 JS -->
   <script src="./kr/js/script_main.js"></script>
   <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-  <script src="./kr/js/progressbar.js"></script>
+
   <!--progressbar add 두개를 저장을 해야 하는데 저장하게 되면 파일이 꼬여버림-->
+
 
   <!--[if lt IE 9]>
       <script src="/jquery/js/html5.js"></script>
@@ -155,6 +158,7 @@
               <span>SCROLL DOWN</span> <i class="line" aria-hidden="true"></i>
             </p>
           </article>
+
           <article id="section1" class="mainCnts_wrap">
             <div class="aboutMignon_wrap1 innerwrap">
               <h3 class="hide">about mignon</h3>
@@ -299,12 +303,12 @@
             </div>
           </article>
 
-          <article id="section5" class="mainCnts_wrap">
+          <!-- <article id="section5" class="mainCnts_wrap">
             <div class="worldwide_wrap innerwrap">
               <div></div>
               <div></div>
             </div>
-          </article>
+          </article> -->
           <!-- <article id="section3" class="mainCnts_wrap">
                             <div class="atomypark_wrap">
                                 <div class="innerwrap">
@@ -439,8 +443,10 @@
           </article>
 
           <article id="section6" class="mainCnts_wrap">
+            <div><img src="./images/bg5.png" alt=""></div>
             <div class="nowOn_wrap innerwrap">
               <h3 style="font: small-caps">Contect</h3>
+
               <div class="nowOn_lst">
                 <!-- items -->
               </div>
@@ -546,56 +552,56 @@
     //$.ajax({ url:'/logInsert.es?mid=a10000000000' });		// 로그기록
   </script>
   <script>
-    $(function () {
-      function progressBar(target, value) {
-        //target="progress0"
-        var target = "#" + target;
-        //console.log(target+"/"+value);
-        var total_w = $("#section2 .items .progress").width();
-        //console.log(total_w)
-        var now_w = (total_w * value) / 100;
-        //console.log(target + " .progress .bar")
-        $(target + " #section2 .items .progress .bar").animate({
-            width: now_w,
-          },
-          1000,
-          "swing"
-        );
-      }
-      var v = [];
-      var pn = 0;
-      $(".pro .bar_txt").text(function (index, value) {
-        v[index] = value;
-        return value + "%";
-      });
-      var progress = setInterval(function () {
-        progressBar("progress" + pn, v[pn]);
-        pn++;
-        if (pn > $(".pro .bar_txt").length - 1) {
-          clearInterval(progress);
-        }
-      }, 250);
-      //console.log(v);
-    });
+    // $(function () {
+    //   function progressBar(target, value) {
+    //     //target="progress0"
+    //     var target = "#" + target;
+    //     //console.log(target+"/"+value);
+    //     var total_w = $("#section2 .items .progress").width();
+    //     //console.log(total_w)
+    //     var now_w = (total_w * value) / 100;
+    //     //console.log(target + " .progress .bar")
+    //     $(target + " #section2 .items .progress .bar").animate({
+    //         width: now_w,
+    //       },
+    //       1000,
+    //       "swing"
+    //     );
+    //   }
+    //   var v = [];
+    //   var pn = 0;
+    //   $(".pro .bar_txt").text(function (index, value) {
+    //     v[index] = value;
+    //     return value + "%";
+    //   });
+    //   var progress = setInterval(function () {
+    //     progressBar("progress" + pn, v[pn]);
+    //     pn++;
+    //     if (pn > $(".pro .bar_txt").length - 1) {
+    //       clearInterval(progress);
+    //     }
+    //   }, 250);
+    //   //console.log(v);
+    // });
 
     //탑메뉴를 누르면 아래 각 section의 top이 0이 되도록 만드는 스크립트
-    $(function () {
-      $("#gnavigation > li > a").each(function () {
-        $(this).click(function () {
-          var target = $(this).attr("href");
-          var target_h = $(target).height() * index;
+    // $(function () {
+    //   $("#gnavigation > li > a").each(function () {
+    //     $(this).click(function () {
+    //       var target = $(this).attr("href");
+    //       var target_h = $(target).height() * index;
 
-          var first_a = $("#gnavigation > li  > a:eq(0)").attr("href");
-          $(window).scrollTop(target_h);
-          if (target == first_a) {
-            $("#fullpage").css("margin-top", 0);
-          } else {
-            $("#fullpage").css("margin-top", $("#gnavigation").height());
-          }
-          return false;
-        }); //click event end
-      }); //each end
-    }); //jquery end
+    //       var first_a = $("#gnavigation > li  > a:eq(0)").attr("href");
+    //       $(window).scrollTop(target_h);
+    //       if (target == first_a) {
+    //         $("#fullpage").css("margin-top", 0);
+    //       } else {
+    //         $("#fullpage").css("margin-top", $("#gnavigation").height());
+    //       }
+    //       return false;
+    //     }); //click event end
+    //   }); //each end
+    // }); //jquery end
   </script>
 </body>
 

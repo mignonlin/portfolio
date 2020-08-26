@@ -691,19 +691,11 @@
   color: #fff;
 }
 
-#section2 {
-  width: 100%;
-  height: 100vh;
-}
 
-#section2 .skills_wrap {
-  width: 100%;
-  border: 2px dotted #00ff33;
-  height: 100vh
-}
+
 
 /*section2 추가 20.08.22 */
-#section2 .skills_wrap .innerwrap .items {
+/* #section2 .skills_wrap .innerwrap .items {
   position: absolute;
   top: 0;
   left: 50%;
@@ -748,13 +740,13 @@
   animation: ani 1s linear infinite;
   width: 200px;
   height: 300px;
-}
+} */
 
 /* #section2 .skills_wrap .innerwrap .items .item .front h2 {
     margin-top: 0;
 } */
 /*아래거*/
-#section2 .skills_wrap .innerwrap .items .item .back {
+/* #section2 .skills_wrap .innerwrap .items .item .back {
   background-color: #fdf3df;
   color: #000;
   height: inherit;
@@ -770,10 +762,10 @@
   font-size: 15px;
   color: #333;
   font-weight: bold;
-}
+} */
 
 /*버튼*/
-#section2 .skills_wrap .innerwrap .items .item .back a {
+/* #section2 .skills_wrap .innerwrap .items .item .back a {
   background-color: yellowgreen;
   color: #fff;
   padding: 5px 15px;
@@ -792,10 +784,10 @@
 #section2 .skills_wrap .innerwrap .items .item:hover .back {
   top: 50%;
   opacity: 1;
-}
+} */
 
-/*#section6 progress bar in the html5/css3/javascript*/
-#section2 .skills_wrap .innerwrap .items .item .back .pro {
+/*#section2 progress bar in the html5/css3/javascript*/
+/* #section2 .skills_wrap .innerwrap .items .item .back .pro {
   overflow: hidden;
   margin-bottom: 10px;
 }
@@ -845,11 +837,11 @@
   height: 25px;
   line-height: 25px;
   margin-left: 16px;
-}
+} */
 
 /*progress end*/
 
-@keyframes ani {
+/* @keyframes ani {
 
   0%,
   100% {
@@ -859,19 +851,38 @@
   50% {
     transform: scale(1.1);
   }
-}
+} */
 
 /*section6 추가 끝 */
 /*section2추가 끝*/
-.skills_wrap {
+
+
+#section2 {
+  width: 100%;
+  height: 100vh;
+}
+
+#section2 .skills_wrap {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 500px;
+  position: relative;
   /* z-index: 1000; */
   /* background: url(./images/bg5.png) no-repeat 0 0; */
 }
+
+#section2 .skills_wrap .innerwrap {
+  border: 1px solid red;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+
+
 
 /* 
 .skills_wrap .products_title {
@@ -881,7 +892,7 @@
   text-align: center;
   border: 1px solid #000;
 } */
-
+/* 
 .products_img .slick-list,
 .products_img .slick-track {
   height: 100%;
@@ -924,7 +935,7 @@
 
 .products_img .slick-dots .slick-active button:before {
   background: #fff;
-}
+} */
 
 /*애니메이션*/
 /* .skills_wrap .products_title {
@@ -1062,7 +1073,7 @@
 .atomypark_wrap .btn_wrap>a {
   float: left;
   width: 12.5rem;
-  /* height:3.25rem; */
+  /* height:3.25rem; 
 padding: 1rem;
 background: rgba(255, 255, 255, 0.9);
 font-size: 0.85rem;
@@ -1073,9 +1084,9 @@ transition: background 0.3s ease,
 color 0.3s;
 -webkit-transition: background 0.3s ease,
 color 0.3s;
-}
+}*/
 
-.atomypark_wrap .btn_wrap>a:hover {
+/* .atomypark_wrap .btn_wrap>a:hover {
   background: #2ac1bc;
   color: #fff;
 }
@@ -1088,9 +1099,9 @@ color 0.3s;
   display: none;
   line-height: 1.25rem;
   vertical-align: top;
-}
+} */
 
-*/
+
 /*애니메이션*/
 /* .atomypark_wrap .atomypark_title {
   opacity: 0;
@@ -2920,6 +2931,7 @@ a {
     font-size: 0.8rem;
   }
 
+  /* 
   .atomypark_title .h3_desc {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -2931,10 +2943,9 @@ a {
 
   .atomypark_wrap .btn_wrap>a {
     width: 10rem;
-    /* height:2.75rem; */
     padding: 0.75rem;
     font-size: 0.8rem;
-  }
+  } */
 
   .social_wrap h3 {
     margin-bottom: 2.5rem;
@@ -3365,10 +3376,10 @@ a {
     line-height: 1.2rem;
   }
 
-  .atomypark_title .h3_desc {
+  /* .atomypark_title .h3_desc {
     font-size: 0.8rem;
     line-height: 1.25rem;
-  }
+  } */
 
   .atomypark_wrap .btn_wrap {
     margin-top: 1.25rem;
@@ -3650,18 +3661,18 @@ a {
     background-position: 75% 50%;
   }
 
-  .atomypark_title {
+  /* .atomypark_title {
     text-align: center;
-  }
-
+  } */
+  /* 
   .atomypark_title h3 {
     text-align: center;
-  }
+  } */
 
-  .atomypark_wrap .btn_wrap {
+  /* .atomypark_wrap .btn_wrap {
     width: 16.5rem;
     margin: 1.25rem auto 0;
-  }
+  } */
 
   .worldwide_group>div.active .marking {
     font-size: 0.8rem;

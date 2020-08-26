@@ -77,9 +77,9 @@ $(document).ready(function () {
           $(".skills_wrap").addClass("current");
           break;
 
-        case 4:
-          $(".atomypark_wrap").addClass("current");
-          break;
+          // case 4:
+          //   $(".atomypark_wrap").addClass("current");
+          //   break;
 
         case 5:
           $(".social_wrap").addClass("current");
@@ -225,17 +225,17 @@ $(document).ready(function () {
   });
 
   //�좏꽣誘명뙆��
-  $(".atomypark_img").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: true,
-    arrows: false,
-    fade: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 500,
-    cssEase: "linear",
-  });
+  // $(".atomypark_img").slick({
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   dots: true,
+  //   arrows: false,
+  //   fade: true,
+  //   autoplay: true,
+  //   autoplaySpeed: 3000,
+  //   speed: 500,
+  //   cssEase: "linear",
+  // });
 
   setInterval(function () {
     var time = parseInt($("#mVisualVideo").prop("currentTime"));

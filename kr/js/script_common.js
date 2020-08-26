@@ -31,9 +31,9 @@ $(document).ready(function () {
     var scene_list = '.areaScene1, .areaScene2, .areaScene3, .areaScene4, .areaScene5, .areaScene6, .areaScene7'.split(', ')
     scene_list.forEach(function (triggerElSelector) {
         var scene = new ScrollMagic.Scene({
-            triggerElement: triggerElSelector,
-            triggerHook: 0.8,
-        })
+                triggerElement: triggerElSelector,
+                triggerHook: 0.8,
+            })
             .setClassToggle(triggerElSelector, 'is-active')
             .reverse(false)
             .addTo(controller)
@@ -41,9 +41,9 @@ $(document).ready(function () {
 
     $('.title_wrap').each(function () {
         var scene = new ScrollMagic.Scene({
-            triggerElement: this,
-            triggerHook: 0.8,
-        })
+                triggerElement: this,
+                triggerHook: 0.8,
+            })
             .setClassToggle(this, 'is-active')
             .reverse(false)
             .addTo(controller)
@@ -58,13 +58,18 @@ $(document).ready(function () {
             $(this).append($_container)
         }
 
-        tl.fromTo(img, 1, { y: -60 }, { y: 60, ease: Linear.easeNone })
-        var scene = new ScrollMagic.Scene({
-            triggerElement: this,
-            triggerHook: 0.8,
-            offset: 50,
-            duration: '100%',
+        tl.fromTo(img, 1, {
+            y: -60
+        }, {
+            y: 60,
+            ease: Linear.easeNone
         })
+        var scene = new ScrollMagic.Scene({
+                triggerElement: this,
+                triggerHook: 0.8,
+                offset: 50,
+                duration: '100%',
+            })
             .setTween(tl)
             .reverse(false)
             .addTo(controller)
@@ -139,8 +144,7 @@ $(document).ready(function () {
         if ($('html').hasClass('fp-enabled')) {
             $.fn.fullpage.moveTo(1)
         } else {
-            $('html,body').animate(
-                {
+            $('html,body').animate({
                     scrollTop: 0,
                 },
                 200
@@ -609,6 +613,7 @@ function fourTech() {
             })
         })
         $closeButton.on('click', close)
+
         function open(idx) {
             $('.technology_lst > li').removeClass('current')
             $('.technology_detail > div').removeClass('active')
@@ -618,6 +623,7 @@ function fourTech() {
             $('#theFame06').addClass('fixActive')
             $('#cellActive05').addClass('fixActive')
         }
+
         function close() {
             $('.technology_lst > li').removeClass('current')
             $('.technology_detail > div').removeClass('active')
@@ -640,14 +646,21 @@ function brandVideo() {
         pWidth = Math.ceil(height * ratio)
         $av.width(pWidth)
             .height(height)
-            .css({ left: (width - pWidth) / 2, top: 0 })
+            .css({
+                left: (width - pWidth) / 2,
+                top: 0
+            })
     } else {
         pHeight = Math.ceil(width / ratio)
         $av.width(width)
             .height(pHeight)
-            .css({ left: 0, top: (height - pHeight) / 2 })
+            .css({
+                left: 0,
+                top: (height - pHeight) / 2
+            })
     }
 }
+
 function fallback(video) {
     var img = video.querySelector('img')
     if (img) video.parentNode.replaceChild(img, video)
@@ -740,6 +753,7 @@ function socialIntro() {
                 close()
             })
         }
+
         function open() {
             $('.contribution_lst').removeClass('active')
             $('.contribution_lst > li').removeClass('current')
@@ -753,6 +767,7 @@ function socialIntro() {
             $('.contributionBG_lst > li').removeClass('bgActive')
             $('.contributionBG_lst > li').eq(ind).addClass('bgActive')
         }
+
         function close() {
             $('.contribution_lst').removeClass('active')
             $('.contribution_lst > li').removeClass('current')
@@ -773,12 +788,12 @@ function newsArchive() {
 }
 
 // �좏꽣誘명뙆�� 鍮꾩���
-function atomyparkVisualHeight() {
-    var $window = $(window)
-    var $windowsWidth = $window.width()
-    var $windowsHeight = $window.height()
-    $('.atomyparkVisual_wrap').css({ height: $windowsHeight })
-}
+// function atomyparkVisualHeight() {
+//     var $window = $(window)
+//     var $windowsWidth = $window.width()
+//     var $windowsHeight = $window.height()
+//     $('.atomyparkVisual_wrap').css({ height: $windowsHeight })
+// }
 
 //湲�濡쒕쾶 �좏꽣誘� �뚯썝媛���
 $(document).ready(function () {
