@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Cafe24Dangdanghae';
+  src: url('Cafe24Dangdanghae.eot');
+  src: url('Cafe24Dangdanghae.eot?#iefix') format('embedded-opentype'),
+       url('Cafe24Dangdanghae.svg#Cafe24Dangdanghae') format('svg'),
+       url('Cafe24Dangdanghae.ttf') format('truetype'),
+       url('Cafe24Dangdanghae.woff') format('woff'),
+       url('Cafe24Dangdanghae.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
