@@ -1279,7 +1279,7 @@ markup상 이미 잘못 사용한 부분을 찾기도 어려운 상태라서 위
 
 .mignonHurb_lst .hubMem_lst a {
     display: block;
-    padding: 0.75rem 0;
+    padding: 0.375rem 0;
     font-weight: 400;
     font-size: 0.625rem;
     line-height: 1rem;

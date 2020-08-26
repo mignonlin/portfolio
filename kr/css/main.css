@@ -9,6 +9,10 @@
   font-style: normal;
 } */
 
+* {
+  font-family: RIDIBatang;
+}
+
 .main #header {
   background: transparent;
 }
@@ -23,6 +27,10 @@
 
 .main #header h1.logo>a {
   background-position: 0 100%;
+}
+
+.main #header #gnavigation {
+  font-family: RIDIBatang;
 }
 
 .main #header #gnavigation .th1 {
@@ -704,10 +712,51 @@
   left: 35%;
   width: 35%;
   height: 35%;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   /* z-index: 1000; */
 }
 
+#section2 .skills_des_wrap {
+  width: 75%;
+  height: 30%;
+  text-align: justify;
+  color: #333;
+  font-size: 20px;
+  /* border: 3px dashed #ff0; */
+  line-height: 30px;
+  position: absolute;
+  left: 15%;
+  top: 55%;
+  margin-top: 20px;
+}
+
+#section2 .skills_des_wrap .skills_des1 {
+  width: 40%;
+  height: 30%;
+  /* border: 1px solid red; */
+  float: left;
+  padding-left: 5px;
+  font-family: RIDIBatang;
+  line-height: 40px;
+}
+
+@font-face {
+  font-family: 'RIDIBatang';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+#section2 .skills_des_wrap .skills_des2 {
+  width: 40%;
+  height: 30%;
+  /* border: 1px solid blue; */
+  float: right;
+  padding-right: 5px;
+  font-family: RIDIBatang;
+  line-height: 40px;
+}
 
 #section4 {}
 
@@ -937,8 +986,8 @@
   -webkit-filter: blur(0.5rem);
   opacity: 0;
   filter: alpha(opacity=0);
-  transition: filter 0.3s, opacity 0.3s;
-  -webkit-transition: filter 0.3s, opacity 0.3s;
+  transition: filter 0.2s, opacity 0.2s;
+  -webkit-transition: filter 0.2s, opacity 0.2s;
 }
 
 /* .social_lst .item{opacity:0;filter:alpha(opacity=0);transform:translateX(-1.75rem);-webkit-transform:translateX(-1.75rem);transition:opacity .5s,transform .5s;-webkit-transition:opacity .5s,transform .5s} */
@@ -988,10 +1037,31 @@
 
 }
 
+#section6 .nowOn_wrap h4 {
+  margin-left: 60px;
+}
+
 #section6 .nowOn_wrap h3 {
-  line-height: 30px;
-  text-align: center;
+  line-height: 10px;
+  text-align: right;
   color: #fff;
+  opacity: 0.5;
+  margin-top: 100px;
+  margin-left: 30px;
+}
+
+#section6 .nowOn_wrap .goodspeak {
+  line-height: 40px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 25px;
+  text-align: right;
+  color: #fff;
+  margin-top: 100px;
+  font-family: 'NEXON Lv1 Gothic OTF';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 #section6 .nowOn_wrap .nowOn_lst {}
