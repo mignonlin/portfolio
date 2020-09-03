@@ -31,10 +31,14 @@
 
 .main #header #gnavigation {
   font-family: RIDIBatang;
+  /* overflow: auto; */
 }
 
 .main #header #gnavigation .th1 {
-  color: #fff;
+  color: #333;
+  background-color: #fff;
+  /*0903*/
+  /* color: #fff; */
 }
 
 .main #header #gnavigation .th1:hover {
@@ -73,7 +77,8 @@
   position: fixed;
   top: 0;
   height: 3.75rem;
-  background: #f7f8fa;
+  background: #fff;
+  border: 1px solid red;
 }
 
 .main #header.fixed:before {
@@ -81,7 +86,7 @@
 }
 
 .main #header.fixed:after {
-  background: #d0d3d5;
+  background: #fff;
 }
 
 /*logo*/
@@ -699,7 +704,6 @@
   color: #fff;
 }
 
-
 #section2 {
   width: 100vw;
   height: 100vh;
@@ -716,13 +720,11 @@
   /* z-index: 1000; */
 }
 
-
 #section2 .skills_wrap .hoverPlease {
   position: absolute;
   right: -200px;
   top: 20%;
   opacity: 0.8;
-
 }
 
 #section2 .skills_des_wrap {
@@ -750,12 +752,11 @@
 }
 
 @font-face {
-  font-family: 'RIDIBatang';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+  font-family: "RIDIBatang";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
-
 
 #section2 .skills_des_wrap .skills_des2 {
   width: 40%;
@@ -1047,7 +1048,6 @@
 
 #section6 .nowOn_wrap {
   position: relative;
-
 }
 
 #section6 .nowOn_wrap img {
@@ -1079,14 +1079,13 @@
   text-align: right;
   color: #fff;
   margin-top: 100px;
-  font-family: 'NEXON Lv1 Gothic OTF';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+  font-family: "NEXON Lv1 Gothic OTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 #section6 .nowOn_wrap .nowOn_lst {}
-
 
 /*애니메이션*/
 .portfolio_wrap2 h3 {
@@ -1543,8 +1542,6 @@
 }
 
 @media screen and (max-width: 980px) {
-
-
   .aboutMignon_wrap2 {
     padding-right: 3rem;
   }

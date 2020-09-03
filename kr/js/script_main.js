@@ -1,21 +1,10 @@
-/*
-$(function () {
-	// �꾩쭅 �곗씠�곌� �닿��섏� �딆븘
-	// �꾩떆濡� ��젣.
-	// �섏쨷�� �곗씠�� 蹂듦뎄�섎㈃
-	// script_main.bak.js瑜� �ㅼ떆 �ъ슜�� 寃�
-	// 2020-05-15 �꾧킅誘�
-	$('#section6').remove();
-})
-*/
 $(document).ready(function () {
-  mainHeight(); //釉뚮씪�곗� �믪씠 怨꾩궛
-  mVisual_resize(); //硫붿씤鍮꾩���
-  worldwide(); //�붾뱶���대뱶
+  mainHeight();
+  mVisual_resize();
+  worldwide();
 
   var isFirstFocusAbout = true;
 
-  // ���섏씠吏�
   $("#fullpage").fullpage({
     //verticalCentered    : true,
     //anchors : ['main', 'about', 'brand', 'park', 'csr', 'global', 'news', 'foot'],
@@ -25,9 +14,7 @@ $(document).ready(function () {
       "About",
       "Skills",
       "Portfolio",
-      "Contact",
-      "111",
-      "222",
+      "Contact"
     ],
     //navigationTooltips: ['Main', 'About', 'Brand', 'Atomy Park', 'CSR', 'Global'],
     navigationPosition: "right",
@@ -45,7 +32,7 @@ $(document).ready(function () {
         isFirstFocusAbout = false;
       }
 
-      if (index == 2 || index == 3 || index == 5) {
+      if (index == 2 || index == 3 || index == 4) { //|| or
         $("#fp-nav").addClass("color");
       } else {
         $("#fp-nav").removeClass("color");
@@ -65,8 +52,7 @@ $(document).ready(function () {
     onLeave: function (prev, next, direction) {
       var $headerAndHurb = $("#header, .mignonHurb_wrap");
 
-      // 硫붾돱 怨좎젙�섍린
-      if (next == 1) {
+      if (next == 0) {
         $headerAndHurb.removeClass("fixed");
       } else {
         $headerAndHurb.addClass("fixed");
@@ -98,7 +84,7 @@ $(document).ready(function () {
   });
   $("#footer").clone().appendTo("#section7 .fp-tableCell");
 
-  //about Atomy �щ씪�대뱶
+  //aboutMignon
   $(".aboutMignon_imgbox")
     .on("init", function (e, slick) {
       $(".aboutMignon_num > .count").html(
