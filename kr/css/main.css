@@ -14,20 +14,26 @@
 }
 
 .main #header {
-  background: transparent;
+  /* background: transparent; */
+  position: fixed;
+  top: 0;
+  height: 3.75rem;
+  background: #fff;
 }
 
 .main #header:before {
-  background: transparent;
+  /* background: transparent; */
+  background: #fff;
 }
 
 .main #header:after {
-  background: transparent;
+  /* background: transparent; */
+  background: #eee;
 }
 
-.main #header h1.logo>a {
+/* .main #header h1.logo>a {
   background-position: 0 100%;
-}
+} */
 
 .main #header #gnavigation {
   font-family: RIDIBatang;
@@ -36,13 +42,10 @@
 
 .main #header #gnavigation .th1 {
   color: #333;
-  background-color: #fff;
-  /*0903*/
-  /* color: #fff; */
 }
 
 .main #header #gnavigation .th1:hover {
-  color: #fff;
+  color: #333;
 }
 
 .main #header #gnavigation .th1:before {
@@ -78,7 +81,6 @@
   top: 0;
   height: 3.75rem;
   background: #fff;
-  border: 1px solid red;
 }
 
 .main #header.fixed:before {
@@ -86,13 +88,13 @@
 }
 
 .main #header.fixed:after {
-  background: #fff;
+  background: #eee;
 }
 
 /*logo*/
-.main #header.fixed h1.logo>a:first-child {
+/* .main #header.fixed h1.logo>a:first-child {
   display: none;
-}
+} */
 
 .main #header.fixed h1.logo .img_hover {
   display: block;
@@ -139,16 +141,16 @@
 /* .main #header.current h1.logo > a {
     background-position: 0 0;
 } */
-.main #header.current h1.logo>a:first-child img {
+/* .main #header.current h1.logo>a:first-child img {
   display: none;
-}
+} */
 
-.main #header.current h1.logo .img_hover {
+/* .main #header.current h1.logo .img_hover {
   display: block;
   z-index: 999;
   position: absolute;
   top: 0;
-}
+} */
 
 .main #header.current #gnavigation .th1 {
   color: #333;
@@ -437,7 +439,7 @@
 /*컨텐츠*/
 .aboutMignon_wrap1,
 /* .skills_wrap, */
-.atomypark_wrap,
+/* .atomypark_wrap, */
 .social_wrap,
 .portfolio_wrap2,
 .worlwide_wrap {
@@ -1131,6 +1133,7 @@
   height: 8.75rem !important;
 }
 
+/*?????이건 뭐징 */
 #section7 .fp-tableCell {
   height: auto !important;
 }
@@ -1281,7 +1284,7 @@
 
   .aboutMignon_wrap1,
   .skills_wrap,
-  .atomypark_wrap,
+  /* .atomypark_wrap, */
   .social_wrap,
   .portfolio_wrap2,
   .worlwide_wrap {
@@ -1384,7 +1387,7 @@
 
   .aboutMignon_wrap1,
   .skills_wrap,
-  .atomypark_wrap,
+  /* .atomypark_wrap, */
   .social_wrap,
   .portfolio_wrap2,
   .worlwide_wrap {
@@ -1924,10 +1927,10 @@
     line-height: 1.25rem;
   } */
 
-  .atomypark_wrap .btn_wrap {
+  /* .atomypark_wrap .btn_wrap {
     margin-top: 1.25rem;
-  }
-
+  } */
+  /* 
   .atomypark_wrap .btn_wrap>a {
     width: auto;
     display: block;
@@ -1935,11 +1938,11 @@
     font-size: 0.75rem;
     line-height: 1.2rem;
     float: none;
-  }
+  } */
 
-  .atomypark_wrap .btn_wrap>a+a {
+  /* .atomypark_wrap .btn_wrap>a+a {
     margin: 0.5rem 0 0 0;
-  }
+  } */
 
   .social_wrap {
     padding-top: 2rem;

@@ -27,6 +27,7 @@ $(document).ready(function () {
     //responsiveWidth	: 1201,
     offsetSections: false,
     afterLoad: function (anchorLink, index) {
+      //여기서   About의 숫자가 카운팅이 됨
       if (index == 2 && isFirstFocusAbout) {
         setTimeout(focusAnimation, 100, 0);
         isFirstFocusAbout = false;
@@ -59,6 +60,8 @@ $(document).ready(function () {
       }
 
       switch (next) {
+
+
         case 3:
           $(".skills_wrap").addClass("current");
           break;
@@ -82,6 +85,8 @@ $(document).ready(function () {
 			click: true
 		}*/
   });
+  //이걸없애면 footer안의 글씨가 안보임 
+  //appendTo 라는 속성으로 인해서 #footer가 #section7에 붙음 
   $("#footer").clone().appendTo("#section7 .fp-tableCell");
 
   //aboutMignon
